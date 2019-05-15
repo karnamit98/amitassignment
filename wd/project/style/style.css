@@ -1,0 +1,453 @@
+
+@font-face{
+    src:url("project/fonts/cambria/Cambria.ttf");
+    font-family:navfont;
+    font-style: normal;
+}
+.navbar-custom{
+    font-size:1em;
+}
+/*setting padding to nav items in mobile view*/
+@media (max-width:762px){
+    .nav-link{
+        padding-left:10px;
+    }
+    .search-box-custom{
+        padding:10px 10px 10px 0px;
+    }
+}
+
+*/
+/*Setting the hover properties for navbar*/
+.nav-link:hover{
+    /*border-right: 1px solid white;
+    border-left: 1px solid white;*/
+    filter:drop-shadow(1px 1px 3px #2f3640);
+    background-color:#00a8ff;
+    text-shadow:1px 1px 3px black;
+}
+.active{
+    color:white;
+    /*filter:drop-shadow(2px 2px 4px #00a8ff);*/
+    background-color:#e84118;
+    text-shadow:1px 1px 3px black;
+    
+}
+
+/*Search Bar*/
+.has-search .form-control-feedback {
+    z-index: 2;
+    display: inline;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+.search-box-custom input[type=text]:hover{
+    opacity:0.9;
+}
+.search-box-custom button[type=button]:hover{
+    background-color:#00a8ff;
+    color:white;
+}
+.custom-td{
+    border:0px;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    padding-top:10px;
+    color:#f5f6fa;
+    background-color: rgba(51, 51, 51, 0.5);
+    background: linear-gradient(to bottom,   #c2351662,#e8421849, #192a565b );
+}
+.foot-links{
+    color:#a4b0be;
+}
+
+/*Landing Page*/
+@font-face{
+    src:url("project/fonts/lovely/Lovely.ttf");
+    font-family:sweet;
+    font-style:normal;
+}
+/*@import url('https://fonts.googleapis.com/css?family=Sofia');*/
+.landing-page-custom{
+    /*background-image:linear-gradient(to bottom, rgba(244, 67, 54, 0.335),rgba(33, 149, 243, 0.452), 
+    rgba(244, 67, 54, 0.527)), url("project/images/bg/bg6.jpg");*/
+    background-image: url("project/images/bg/bg6.jpg") no-repeat center fixed;
+    display: table;
+    height:100%;
+    width:100%;
+    position:relative;
+    background-size:cover;
+}
+
+.landing-text-custom{
+    
+    display:table-cell;
+    text-align:center;
+    vertical-align: middle;
+}
+/*landing page button */
+.landing-page-btn{
+    display:inline-block;
+    background-color:#00a8ff;
+    border-color:#00a8ff;
+    color:#fff;
+    text-shadow: 1px 1px 2px #2f3640;
+    padding:15px 25px;
+    border-radius:5px;
+    box-shadow:0px 12px 7px -7px rgba(0,0,0,0.4);
+    cursor:pointer;
+    transition:all ease-in-out 300ms;
+}
+.landing-page-btn:hover{
+    background-color:#e84118;
+    border-color:#e84118;
+    color:white;
+    box-shadow:0px 30px 15px -15px rgba(0,0,0,0.2);
+    transform:translate(0px, -7px);
+}
+/*optional*/
+.landing-btn{
+    border:2px solid white;
+}
+.landing-btn:hover{
+    background-color:#00a8ff;
+    border-color:#00a8ff;
+    color:white;
+}
+.container-assignment{
+    /*background-color:#29B6F6;*/
+    min-height:200px;
+    min-width:300px;
+    border-radius: 3px;
+    padding:3px auto 3px auto;
+}
+.container-assignment:hover{
+    background-color:#63cdda;
+    color:white;
+}
+.img-assignment{
+    min-height:200px;
+    min-width:40px;
+    padding:5px;
+}
+.img-assignment:hover{
+    background-color:#63cdda;
+}
+.assignment-name{
+    font-size:1.2rem;
+    text-align: center;
+    color:white;
+}
+.assignment-name:hover{
+    color:#546de5;
+    text-shadow:1px 1px 2px white;
+}
+#more, #less{
+    display:block;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0px 9px 5px -5px rgba(0,0,0,0.4);
+    cursor:pointer;
+    transition: all ease-in-out 300ms;
+}
+#more:hover, #less:hover{
+    box-shadow:0px 19px 10px -10px rgba(0,0,0,0.2);
+    transform: translate(0px, -5px);
+    background-color:#00a8ff;
+    border-color:#00a8ff;
+    color:white;
+    text-shadow: 1px 1px 2px #2f3640
+}
+#moreassignment, #less{
+    display:none;
+}
+
+/*Swiper */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-slide {
+    background-position: center;
+    background-size: 100% 100%;
+    width: 350px;
+    height: 400px;
+}
+
+
+/*Popular Anime Description*/
+.popular-anime-container-1{
+    /*background:#546de5;*/
+    min-height:400px;
+    min-width:100%;
+    padding:0px;
+    border:3px solid #574b90;
+}
+.popular-anime-container-2{
+    /*background:brown;*/
+    min-height:200px;
+    min-width:100%;
+    padding:0px;
+}
+.popular-anime-container-3{
+    /*background:#63cdda;*/
+    min-height:200px;
+    min-width:100%;
+    text-align:justify;
+    padding-left:0px;
+}
+
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+    min-height: 300px; /* only if you want fixed height */
+}
+
+/*Watch Now Button #2ed573*/
+.watch-now-btn{
+    /*background-color:#00a8ff;
+    border-color:#00a8ff;*/
+    background-color:#00a8ff;
+    border-color:#00a8ff;
+    color:#fff;
+    text-shadow: 1px 1px 2px #2f3640;
+    padding:15px 25px;
+    border-radius:5px;
+    box-shadow:0px 12px 7px -7px rgba(0,0,0,0.4);
+    cursor:pointer;
+    transition:all ease-in-out 300ms;
+    font-family: sofia;
+    
+}
+.watch-now-btn:hover{
+    background-color:#e84118;
+    border-color:#e84118;
+    color:white;
+    box-shadow:0px 30px 15px -15px rgba(0,0,0,0.2);
+    transform:translate(0px, -7px);
+}
+/*Zoom in out effect for the images in popular anime container*/
+.img-wrapper-anime {
+    overflow: hidden;
+}
+
+.img-wrapper-anime img {
+    transition: all 1s ease;
+}
+
+.img-wrapper-anime img:hover {
+    transform:scale(1.5);
+    cursor: pointer;
+}
+
+
+
+/*Styling for the Stream Page*/
+/*Buttons to show or hide more anime*/
+#more1, #less1{
+    display:block;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: 0px 9px 5px -5px rgba(0,0,0,0.4);
+    cursor:pointer;
+    transition: all ease-in-out 300ms;
+    background-color:#a55eea;
+    color:white;
+    text-shadow: 1px 1px 2px #2f3640;
+}
+#more1:hover, #less1:hover{
+    box-shadow:0px 19px 10px -10px rgba(0,0,0,0.2);
+    transform: translate(0px, -5px);
+    background-color:#eb3b5a;
+    color:white;
+    text-shadow: 1px 1px 2px #2f3640;
+}
+#moreanime, #less1{
+    display:none;
+}
+
+/*stream anime cards*/
+.stream-card-container{
+    margin:0 0 0 0;
+}
+
+.stream-card-container:hover{
+    filter:drop-shadow(2px 2px 4px #2f3542);
+}
+.stream-card-container .card-body{
+    margin-left:0px;
+    margin-right: 0px;
+    padding-top:0px;
+    padding-left:0px;
+    padding-right:0px;
+    background-color:#f7f1e3;
+    padding-bottom:80px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  
+}
+.stream-card-container p{
+    text-align: justify;
+    margin-left:10px;
+    margin-right:10px;
+    padding:auto 10px auto 10px;
+}
+.stream-card-img{
+    filter:drop-shadow(1px 1px 2px black);
+    max-height: 250px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+/*the zoom out effect for stream card image*/
+.img-wrapper {
+    width: 100%;
+    height:250px;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.img-wrapper img {
+    min-width: 100%;
+    min-height: 100%;
+    transition: all 1s ease;
+}
+
+.img-wrapper img:hover {
+    transform:scale(1.5);
+}
+
+#morestream{
+    display:none;
+}
+
+/*Gallery Page*/
+/*gallery header section*/
+.gallery-header{
+    min-width:100%;
+    min-height:200px;
+    color:#ffffff;
+    padding-bottom:20px;
+    text-align:justify;
+    border-bottom:2px solid #2f3542;
+}
+.gallery-header h1{
+    background-color:#2f3542;
+    text-shadow: 1px 1px 2px black;
+    padding-top:15px;
+    padding-bottom:10px;
+}
+.gallery-header .btn{
+    margin-bottom: 8px;
+}
+/*Magnific image section*/
+.gallery-section{
+    width:100%;
+    padding:60px 0;
+    background:#f1f1f1;
+}
+.inner-width{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding: 0 20px;
+}
+.gallery-section h1{
+    text-align:center;
+    color:#333;
+}
+.border{
+    width:100px;
+    height:4px;
+    background:#333;
+    margin:60px auto;
+}
+.gallery-section .gallery{
+    display:flex;
+    flex-wrap:wrap-reverse;
+    justify-content: center;
+}
+.gallery-section .image{
+    flex:25%;
+    overflow:hidden;
+    cursor: pointer;
+}
+.gallery-section .image img{
+    width:100%;
+    height:100%;
+    transition:0.4s;
+}
+.gallery-section .image:hover img{
+    transform:scale(1.4) rotate(15deg);
+}
+@media screen and (max-width:968px){
+    .gallery-section .image{
+        flex:33.33%;
+    }
+}
+@media screen and (max-width:768px){
+    .gallery-section .image{
+        flex:50%;
+    }
+}
+@media screen and (max-width:480px){
+    .gallery-section .image{
+        flex:100%;
+    }
+}
+/*more content*/
+#moregallery{
+    display:none;
+}
+
+/*Login Page*/
+.login-form{
+    max-width:600px;
+    text-align:center;
+    display: block;
+    padding:auto 10% auto 10%;
+    margin:auto auto auto auto;
+}
+
+/*Login Button*/
+.login-btn{
+    display:inline-block;
+    background-color:#2ed573;
+    border-color:#2ed573;
+    color:#fff;
+    text-shadow: 1px 1px 2px #2f3640;
+    padding:5px 10px;
+    border-radius:5px;
+    box-shadow:0px 12px 7px -7px rgba(0,0,0,0.4);
+    cursor:pointer;
+    transition:all ease-in-out 300ms;
+}
+.login-btn:hover{
+    background-color:#e84118;
+    border-color:#e84118;
+    color:white;
+    box-shadow:0px 30px 15px -15px rgba(0,0,0,0.2);
+    transform:translate(0px, -4px);
+}
+.login-form input[type=email]:hover, .login-form input[type=password]:hover{
+    opacity:0.7;
+}
+.register-form input[type=text]:hover, 
+.register-form input[type=email]:hover, 
+.register-form input[type=password]:hover,
+.register-form input[type=date]:hover,
+.register-form select:hover{
+    opacity:0.7;
+}
+
+/*Register Form*/
+.register-form{
+    margin:30px 30px 30px 30px;
+}

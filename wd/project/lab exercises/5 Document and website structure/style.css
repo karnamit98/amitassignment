@@ -1,0 +1,87 @@
+body{
+    padding:200px;
+    margin:0px;
+    padding-top:0px;
+    background-color: grey;
+}
+header{
+    font-family: Sonsie One;
+    color:white;
+    filter:drop-shadow(2px 2px purple);
+    font-size: 15pt;
+    text-align: center;
+}
+nav{
+    background-color: rgba(248, 82, 253, 0.993);
+    padding:15px;
+    height:50px;
+}
+
+nav ul li{
+    display: block;
+    float:left;
+    padding-right: 45px;
+    padding-left: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+}
+nav form{
+    position:relative;
+    top:-3px;
+}
+nav form input[type=search]{
+    height:27px;
+    margin-right: 5px;
+    margin-left:15px;
+    
+}
+form input[type=submit]{
+    color:white;
+    background-color:black;
+    width:60px;
+    height:27px;
+    border-color:black;   
+}
+
+main{
+    position: relative;
+    top:-10px;
+    
+}
+main article{
+    width:75%;
+    background-color: rgb(236, 227, 211);
+    padding:10px;
+    text-align: justify;
+    float: left;
+       
+}
+main article h2{
+    text-align:center;
+    font-family: Sonsie One;
+}
+main article h3{
+    font-family: Sonsie One;
+   
+}
+main aside{
+    background-color:rgba(248, 82, 253, 0.993);
+    height: 495px;
+    margin-left: 743px;
+    
+}
+main aside h2{
+    text-align:center;
+    font-family: Sonsie One;
+    padding-top:20px;
+}
+footer{
+    background-color: rgb(236, 227, 211);
+    padding:10px;
+    margin-top:7px;
+}

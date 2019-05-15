@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>AnimeNation</title>
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style/bootstrap.css" />
+        <link rel="stylesheet" href="style/glyphicons.css" />
+        <link rel="stylesheet" href="style/swiper.min.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <style>
+          /*  body{
+                background-image:linear-gradient(to bottom, rgba(244, 67, 54, 0.335),rgba(33, 149, 243, 0.452), 
+                rgba(244, 67, 54, 0.527)), url("project/images/bg/bg6.jpg");
+                   
+            }*/
+            body{
+                overflow-x:hidden;
+               font-family:sofia;
+            }
+            @font-face{
+                src:url("fonts/sofia/Sofia-Regular.ttf");
+                font-family:sofia;
+                font-style:normal;
+            }
+            .landing-btn{
+                border:2px solid white;
+            }
+            .landing-btn:hover{
+                background-color:#00a8ff;
+                border-color:#00a8ff;
+                color:white;
+            }
+            /*Media Query for anime cards row argin
+            @media (max-width:1200px) and (min-width:700px){
+                .anime-card-margin{
+                    margin-left:50px;
+                }
+            }*/
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top sticky-top navbar-custom" style="padding:0px;min-width:100%;">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.png" style="max-height:2em;max-width:2em;
+                margin-right:0px;filter:drop-shadow(1px 1px rgba(0, 171, 193, 0.431)) drop-shadow(1px 1px 2px white);">
+                <span style="margin-left:0px;font-size:1em;text-shadow:1px 1px 1px blue;font-family: sofia;">AnimeNation</span>
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stream.html">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#assignmentsection">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">Login</a>
+                    </li>
+                    <li style="padding-left:8px;">
+                        <!-- Search Box -->
+                        <div class="input-group search-box-custom">
+                            <input type="text" class="form-control" placeholder="Search this blog">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary srch-btn-custom" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--first background image with landing page-->
+        <div class="landing-bg" style="background: url(images/bg/bg5.jpg) no-repeat center fixed;
+                    display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;">
+            <div class="landing-text-custom">
+                <h1 style="color:white;font-weight:600;
+                    text-shadow: 1px 1px 2px teal;">WELCOME</h1>
+                <span style="color:white;text-shadow:1px 1px 2px #596275;font-size:1.3em;">
+                        to the world of Otaku!</span><br><br>
+                <a href="index.html">
+                    <!--button class="btn btn-default btn-lg landing-btn btn-outline-light" 
+                    style=" font-family: sofia;text-shadow: 1px 1px 2px #2f3640;">Get Started</button-->
+                    <button class="btn landing-page-btn" style=" font-family: sofia;">Get Started</button>
+                </a>
+            </div>
+        </div>
+
+        <br><br><br>
+        <!--Anime Descriptions Cards-->
+        <h3 class="text-center" style="text-shadow:2px 2px 4px teal">Popular Anime Shows</h3><br>
+        <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" />
+        
+        <div style="margin:auto 75px auto 75px;">
+            <!--One Piece-->
+            <br>
+            <h3 style="text-shadow:1px 1px 2px teal;padding-left: 20px;">One Piece
+                <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+            </h3><br><br>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <a href="errorpage.html"  target="blank">
+                        <div class="container popular-anime-container-1 img-wrapper-anime">
+                            <img class="img-responsive" width="100%" height="410px" src="images/op/opcover2.png" 
+                            alt="One Piece Cover" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/5BIg26BLXXQ" 
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                <p>Monkey D. Luffy refuses to let anyone or anything stand in the way of his quest 
+                                to become king of all pirates. With a course charted for the treacherous 
+                                waters of the Grand Line, this is one captain who’ll never drop anchor 
+                                until he’s claimed the greatest treasure on Earth—the Legendary One Piece!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/t7xHamn5inQ" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                <p> One Piece has gone through a long succession of theme songs, performed by popular 
+                                    artists, since its debut on television. Though performed by popular singers 
+                                    and bands, most seem to be written specifically for the show, as nearly all of 
+                                    them reference treasure, the sea, or ships in some way. <!--As of October 7, 2018, 
+                                    there have been 21 opening themes, 18 regular ending themes, and a number of 
+                                    film- and special endings as well.--></p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        
+            <!--Naruto Shippuden-->
+            <br><br><br>
+            <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+            <h3 style="text-shadow:1px 1px 2px #e66767;padding-left: 20px;">Naruto Shippuden
+                <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+            </h3><br><br>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <a href="errorpage.html"  target="blank">
+                        <div class="container popular-anime-container-1 img-wrapper-anime">
+                            <img class="img-responsive" width="100%" height="410px" src="images/narutos/narutoscover3.jpg" 
+                            alt="Naruto Shippuden Cover" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/kJCMQXNvADk" 
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                <p>It has been two and a half years since Naruto Uzumaki left Konohagakure, the 
+                                    Hidden Leaf Village, for intense training following events which fueled his 
+                                    desire to be stronger. Now Akatsuki, the mysterious organization of elite 
+                                    rogue ninja, is closing in on their grand plan which may threaten the safety 
+                                    of the entire shinobi world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/LDDWf1vu9gA" 
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                <p> The anime, being a TV show that has lasted many seasons, has many opening and 
+                                    ending themes. These themes have been from original Japanese songs, but 
+                                    they have been edited to fit within a 90 second opening sequence by TV Tokyo. 
+                                    The average usage for openings are around 25 episodes while the endings can be 
+                                    up to 12 episodes</p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!--Attack On Titan-->
+            <br><br><br>
+            <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+            <h3 style="text-shadow:1px 1px 2px teal;padding-left: 20px;">Attack On Titan
+                <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+            </h3><br><br>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <a href="errorpage.html"  target="blank">
+                        <div class="container popular-anime-container-1 img-wrapper-anime">
+                            <img class="img-responsive" width="100%" height="410px" src="images/aot/aotcover2.jpg" 
+                            alt="Attack On Titan" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/a3mo2TZGXlM" 
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                <p>After witnessing a horrific personal loss at the hands of the invading creatures, 
+                                    Eren Yeager dedicates his life to their eradication by enlisting into the Survey 
+                                    Corps, an elite military unit that combats the merciless humanoids outside the 
+                                    protection of the walls.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/CID-sYQNCew" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                <p>Feuerroter Pfeil und Bogen (紅蓮の弓矢 Guren no Yumiya?, lit. Crimson Bow and Arrow) 
+                                    is the 1st opening theme of the Attack on Titan anime, and is sung by 
+                                    singer-songwriter Revo of Linked Horizon. </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <!--Avatar: The Last Airbender-->
+            <br><br><br>
+            <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+            <h3 style="text-shadow:1px 1px 2px #e66767;padding-left: 20px;">Avatar: The Last Airbender
+                <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+            </h3><br><br>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <a href="errorpage.html"  target="blank">
+                        <div class="container popular-anime-container-1 img-wrapper-anime">
+                            <img class="img-responsive" width="100%" height="410px" src="images/avatar/avatarcover2.jpg" 
+                            alt="Avatar: The Last Airbender" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/B14pPZ1AlbI" 
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                <p>In a war-torn world of elemental magic, a young boy reawakens to undertake a 
+                                    dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace 
+                                    to the world.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                            <div class="container popular-anime-container-2">
+                                <iframe width="100%" height="200px" src="https://www.youtube.com/embed/d1EnW4kn1kg" 
+                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="container popular-anime-container-3">
+                                <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                <p>The soundtrack of Avatar has many Eastern influences, considering that the show 
+                                    contains many connections to Eastern culture. The Track Team, consisting of 
+                                    Jeremy Zuckerman and Benjamin Wynn, created most of the series' music with 
+                                    MIDI tracks, but compositions for the final episodes in Sozin's Comet were 
+                                    performed by a live orchestra. </p>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <button id="more1" class="btn" style="margin:30px auto 5px auto;">Show More</button>
+            </div>
+
+            <div id="moreanime">
+                <!--One Punch Man-->
+                <br>
+                <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+                <h3 style="text-shadow:1px 1px 2px teal;padding-left: 20px;">One Punch Man
+                    <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+                </h3><br><br>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="container popular-anime-container-1 img-wrapper-anime">
+                                <img class="img-responsive" width="100%" height="410px" src="images/opm/opmcover3.png" 
+                                alt="One Punch Man" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/78ngg0SRlEI" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                    <p>The seemingly ordinary and unimpressive Saitama has a rather unique hobby: being a 
+                                        hero. In order to pursue his childhood dream, he trained relentlessly for 
+                                        three years—and lost all of his hair in the process. Now, Saitama is incredibly 
+                                        powerful, so much so that no enemy is able to defeat him in battle. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/_TUTJ0klnKk" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                    <p>he Hero!! ~Ikareru Ken ni Honō o Tsukeru~ is a single from the band JAM Project. 
+                                        It was used as the opening theme song for the One Punch Man anime adaptation, 
+                                        being featured through the whole 1st season.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <!--Berserk-->
+                <br><br><br>
+                <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+                <h3 style="text-shadow:1px 1px 2px #e66767;padding-left: 20px;">Berserk
+                    <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+                </h3><br><br>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="container popular-anime-container-1 img-wrapper-anime">
+                                <img class="img-responsive" width="100%" height="410px" src="images/berserk/berserkcover2.jpg" 
+                                alt="Berserk" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/0MIw4xzxcTU" 
+                                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                        picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                    <p>A brave young warrior named Guts fights for his fortune as a mercenary on the front lines. 
+                                        A fated encounter unites Guts with the charismatic and deadly young man named Griffith. 
+                                        Leading the rogue soldiers known as the Band of the Hawk, Griffith wields his formidable 
+                                        force like no other.  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ocQ6PDiP014" 
+                                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                        picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                    <p>The opening theme is "Tell Me Why" by PENPALS, the ending theme is 
+                                        "Waiting So Long" by Silver Fins, and the "next episode theme" is 
+                                        "BERSERK -Forces-" by Susumu Hirasawa.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <!--Fairy Tail-->
+                <br><br><br>
+                <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+                <h3 style="text-shadow:1px 1px 2px teal;padding-left: 20px;">Fairy Tail
+                    <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+                </h3><br><br>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="container popular-anime-container-1 img-wrapper-anime">
+                                <img class="img-responsive" width="100%" height="410px" src="images/ft/ftcover1.jpg" 
+                                alt="Fairy Tail" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/DH82GgpzTa4" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                    <p>Magic is what makes the fictional world of Earth-land go 'round, and its many 
+                                        mage guilds work together—or sometimes against one another—to bring balance 
+                                        to that world. Each guild flaunts unique features in hopes of being the best 
+                                        guild on the planet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/NJlmj8l4HLM" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                    <p> Masashi Sogo is handling series composition, and Shinji Takeuchi and Toshihiko 
+                                        Sano are designing the characters. Shoji Hata is the sound designer and Yasuharu 
+                                        Takanashi is composing the music. With the exception of the second animation 
+                                        studio and the character designers, the main staff is also the same as the first anime.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <!--JOJO's Bizarre Adventure-->
+                <br><br><br>
+                <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+                <h3 style="text-shadow:1px 1px 2px teal;padding-left: 20px;">JOJO's Bizarre Adventure
+                    <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Watch Now</button></span>
+                </h3><br><br>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="container popular-anime-container-1 img-wrapper-anime">
+                                <img class="img-responsive" width="100%" height="410px" src="images/jojo/jojocover3.png" 
+                                alt="JOJO's Bizarre Adventure" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/n2u21n2V0do" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                    <p>Naples, 2001. Giorno Giovanna is a small-time crook with one big dream—to become a "Gang-Star." 
+                                        No ordinary thief, Giorno has a connection to the remarkable Joestar bloodline, and possesses 
+                                        a Stand named Gold Experience.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ujtTWISjj1w" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                    <p>  "Great Days UNITS" version, along with the "Akuyaku◇Concerto ~Oingo & Boingo~" 
+                                        and "Akuyaku◇Concerto ~Hol Horse & Boingo~" songs. "Great Days UNITS" was an 
+                                        amazing way to end the Diamond is Unbreakable part of the series.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <!--Samurai Champloo-->
+                <br><br><br>
+                <hr style="border:2px solid #A1887F;filter:drop-shadow(1px 1px 3px #546de5);" /><br><br>
+                <h3 style="text-shadow:1px 1px 2px teal;padding-left: 20px;">Samurai Champloo
+                    <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn"
+                        style="background-color:#00a8ff; border-color:#00a8ff;">Watch Now</button></span>
+                </h3>
+                <br><br>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="container popular-anime-container-1 img-wrapper-anime">
+                                <img class="img-responsive" width="100%" height="410px" src="images/sc/sccover2.jpg" 
+                                alt="Samurai Champloo Cover" />
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/HFZ0Br5n0b0" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Watch Trailer Now!</h4>
+                                    <p>Mugen's a buck wild warrior—violent, thoughtless and womanizing. Jin is a vagrant 
+                                        ronin—mysterious, traditional, well-mannered, and very strong as well. These two 
+                                        fiercely independent warriors can't be any more different from one another, yet 
+                                        their paths cross when Fuu saves them from being executed.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"style="padding:0px;">
+                                <div class="container popular-anime-container-2">
+                                    <iframe width="100%" height="200px" src="https://www.youtube.com/embed/TILn0KWExqM" 
+                                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                                    picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <div class="container popular-anime-container-3">
+                                    <h4 style="color:#574b90; text-shadow:1px 1px 3px #596275;">Opening Song</h4>
+                                    <p> Samurai Champloo Music Record: Masta, was released on June 23, 2004. Produced by 
+                                        Shinichirō Watanabe's longtime friend DJ Tsutchie and the Japanese hip hop duo Force 
+                                        of Nature,[17][verification needed] the album features 18 instrumental tracks and 
+                                        one mid-tempo ballad sung by R&B songstress Kazami.</p>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <button id="less1" class="btn btn-default" style="margin:30px auto 5px auto;">Show Less</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <br><br><br>
+
+        <!--second fixed background-->
+        <div class="landing-bg" style="background:linear-gradient(to bottom right, #63ccda8c,#e15e4194, #63ccda8c) ,
+         url(images/bg/bg1.jpg) no-repeat center center fixed;
+         display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;
+         z-index:-999;filter:blur(0.5px);">
+        </div>
+
+        <br><br><br>
+        <!-- Swiper -->
+        <h3 class="text-center" style="text-shadow:2px 2px 4px teal">Legends of Anime World</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/gutsp.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/shanksp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/levip1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/narutop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/zorop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/saitamap1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/luffyp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/jojop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/itachip1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/aangp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/sasukep1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/mikasap1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/natsup1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/kakaship1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/ippop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/laxusp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/grifithp.png)"></div>
+            </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+
+        <br><br><br><br><br>
+        <!--Author Section-->
+        <h4 class="text-center" style="text-shadow:2px 2px 4px teal">Regards from the author!</h4><br>
+        <div class="row" style="padding:20px;">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <figure class="figure" style="float:left;margin-right: 50px;">
+                    <img src="images/amit.jpg" class="figure-img img-responsive img-fluid rounded-circle"
+                    alt="Attack On Titan">
+                    <figcaption class="figure-caption text-center"><b>Amit Karn</b></figcaption>
+                </figure>
+                <p style="padding-top:70px;margin-left:auto auto auto auto;text-align: justify">
+                    Hi there! My name is Amit Karn and I am currently pursuing by BSc(IT) degree from
+                    The British College, Kathmandu. Website Development is not just any other favourite
+                    subject for me, rather it has become quite an obsession to me making me more and more
+                    passionate about it with every passing day. Every new thing I learn in this subject makes
+                    me fall in love with it all over again. I aspire to become one of the best web developer 
+                    the world has ever seen. Well not literally that, but something close!
+                    <br>PS - Thank You for your visit!
+                </p>
+                <span style="font-size:2.5em;">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/amit.karn.982" target="blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/imamityk98" target="blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <!--Linkedin -->
+                    <a href="https://www.linkedin.com/in/amit-karn-488174162/" target="blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <!--Instagram-->
+                    <a href="https://www.instagram.com/theamittt/" target="blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+       
+         <!--footer-->
+         <div style="min-width: 100%;
+         min-height: 400px;
+         background-image: url(images/footerbg5.jpg);
+         background-size: 100% 100%;
+         position:relative;
+         margin-bottom:0px;">
+        <footer div="page-footer font-small unique-color-dark" style="border-top:2px solid #353b48;font-family:sofia">
+        <div class="container text-center text-md-left mt-5 text-center">
+            <div class="row mt-3" style="color:#ced6e0; font-weight:450;text-align:justify;">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold" style="margin-bottom: 0px;float:left;">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo1.png" style="max-height:100px;max-width:100px;
+                            filter:drop-shadow(3px 5px rgba(0, 171, 193, 0.534)) drop-shadow(3px 5px 5px rgba(255, 255, 255, 0.562));">
+                        </a>
+                    </h6>
+                    <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+                    text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">About Us</h5>
+                    <p>This website was created as a college project.
+                        Use of this website without the creator's consent is strictly prohibited.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                    <!--Anime Links -->
+                    <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+                    text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Anime</h5>
+                    <p><a href="gallery.html#berserk" class="foot-links">Berserk</a></p>
+                    <p><a href="gallery.html#boruto" class="foot-links">Boruto</a></p>
+                    <p><a href="gallery.html#aot" class="foot-links">Attack On Titan</a></p>
+                    <p><a href="gallery.html#dn" class="foot-links">Death Note</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+                    <!--Some More Links -->
+                    <h5 class="text-uppercase font-weight-bold text-center" style="color:#eccc68;margin-bottom: 10px;
+                    text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Useful links</h5>
+                    <p><a href="#loginform" class="foot-links">Your Account</a></p>
+                    <p><a href="#registerform" class="foot-links">Become a Member</a></p>
+                    <p><a href="../home.html#assignmentsection" class="foot-links">Assignment Link</a></p>
+                    <p><a href="errorpage.html" target="blank" class="foot-links">Help</a></p>
+                </div>
+                
+                
+                <!--Contact Us-->
+                <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 text-center">
+                    <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+                    text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616)";>Contact Us</h5>
+                    <table class="table" style="padding:0px;">
+                        <tbody>
+                            <tr>
+                                <td style="border:0px;padding:0px;">
+                                    <a href="https://www.google.com/maps/place/The+British+College,+Kathmandu
+                                    /@27.6920438,85.3193302,15z/data=!4m5!3m4!1s0x0:0xabfe5f4b310f97de!8m2!3d27.
+                                    6920438!4d85.3193302" alt="Google map for The Tritish College" target="blank">
+                                    <img src="images/tbcmap.PNG" class="img-responsive"
+                                    style="max-width:240px;max-height:120px;border-radius:8px;
+                                    padding:3px;border:1px solid blanchedalmond; margin-right:0px;" alt="TBC map" />
+                                    </a>
+                                </td>
+                                <td style="border:0px; color:#a4b0be; text-align: left;padding:0px;padding-left: 5px;">
+                                    <p style="margin:0px;"><i class="fas fa-home mr-3"></i>Kathmandu, Nepal</p>
+                                    <p style="margin:0px;"><i class="fas fa-envelope mr-3"></i>amit.karn98@gmail.com</p>
+                                    <p style="margin:0px;"><i class="fas fa-phone mr-3"></i>+977-9816810976</p>
+                                    <p style="margin:0px;"><i class="fas fa-print mr-3"></i>+ 01 234 567 89</p> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>    
+                </div>
+            </div>
+        </div>
+ <!-- Copyright -->
+ <div class="footer-copyright text-center py-3" style="border-top:2px solid #353b48;
+ margin-top:8px;color:#ffffff;font-weight:450">
+         <img src="images/senjulogo.png" class="image-responsive" style="max-width:150px;
+         max-height: 70px; filter:drop-shadow(2px 2px 5px #00BCD4);">
+         <br>
+         <span style="font-family: sofia;">© 2019 Animenation, The British College</span>
+     </div>
+</footer>
+        </div>
+
+        <!--javascript-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/swiper.min.js"></script>
+        
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+        </script>
+
+        <script>
+            //Anime Show More Options
+            $(document).ready(function(){
+                $(function(){
+                    //toggling content of more anime containers when more and less button is clicked
+                    $('#more1').click(function(){
+                        $(this).hide();
+                        $('#less1').show();
+                        $('#moreanime').slideToggle(500);
+                    });
+                    $('#less1').click(function(){
+                        $(this).hide();
+                        $('#more1').show();
+                        $('#moreanime').slideToggle(500);
+                    });
+                });
+
+            });
+        </script>
+    </body>
+</html>

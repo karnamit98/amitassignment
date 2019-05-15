@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Home</title>
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="project/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="project/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="project/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="project/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="project/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="project/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="project/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="project/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="project/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="project/images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="project/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="project/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="project/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="project/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="project/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="project/style/bootstrap.css" />
+        <link rel="stylesheet" href="project/style/glyphicons.css" />
+        <link rel="stylesheet" href="project/style/style.css" />
+        
+        <style>
+          /*  body{
+                background-image:linear-gradient(to bottom, rgba(244, 67, 54, 0.335),rgba(33, 149, 243, 0.452), 
+                rgba(244, 67, 54, 0.527)), url("project/images/bg/bg6.jpg");
+                   
+            }*/
+            body{
+                overflow-x:hidden;
+               font-family:sofia;
+            }
+            @font-face{
+                /*Font Copyright (c) 2011 by LatinoType Limitada (luciano@latinotype.com)*/
+                src:url("project/fonts/sofia/Sofia-Regular.ttf");
+                font-family:sofia;
+                font-style:normal;
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top sticky-top navbar-custom" style="padding:0px;min-width:100%;">
+            <!-- Brand -->
+            <a class="navbar-brand" href="project/index.html">
+                <img src="project/images/logo1.png" alt="logo" style="max-height:2em;max-width:2em;
+                margin-right:0px;filter:drop-shadow(1px 1px rgba(0, 171, 193, 0.431)) drop-shadow(1px 1px 2px white);">
+                <span style="margin-left:0px;font-size:1em;text-shadow:1px 1px 1px blue;font-family: sofia;">AnimeNation</span>
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project/index.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project/stream.html">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#assignmentsection">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project/member.html">Login</a>
+                    </li>
+                    <li style="padding-left:8px;">
+                        <!-- Search Box -->
+                        <div class="input-group search-box-custom">
+                            <input type="text" class="form-control" placeholder="Search this blog">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary srch-btn-custom" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--first background image with landing page-->
+        <div class="landing-bg" style="background: url(project/images/bg/bg6.jpg) no-repeat center fixed;
+                    display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;">
+            <div class="landing-text-custom">
+                <h1 style="color:white;font-weight:600;
+                text-shadow: 1px 1px 2px teal;">WELCOME</h1>
+                <span style="color:white;text-shadow:1px 1px 2px #596275;font-size:1.3em;">
+                    to the world of Otaku!</span><br><br>
+                <a href="project/index.html">
+                    <!--button class="btn btn-default btn-lg landing-btn btn-outline-light" 
+                    style=" font-family: sofia;text-shadow: 1px 1px 2px #2f3640;">Get Started</button-->
+                    <button class="btn landing-page-btn" style=" font-family: sofia;">Get Started</button>
+                </a>
+            </div>
+        </div>
+
+        <!--Assignment Links Section-->
+        <div id="assignmentsection"></div>
+        <h2 class="text-center text-uppercase" style="padding-top:50px;padding-bottom:50px;
+        text-shadow:2px 2px 4px teal"><u>Assignment List</u></h2>
+        <!--First Row-->
+        <div class="row" style="padding:10px;border-top:1px solid #596275;background-color:#303952;
+        background:linear-gradient(to right, #546ce5, #303952);">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/1 Marking up a letter/letter.html" target="blank">
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a1.PNG" 
+                        alt="Letter" />
+                        1. Letter
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/2 Structuring a page of content (BirdWatching)/birdwatching.html" target="blank" >
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a2.PNG" 
+                        alt="Structuring a page of content" />
+                        2. Structuring a Page of Content
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/3 The head meta data in html/meta example.html" target="blank">
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a3.PNG" 
+                        alt="The head meta data in html"/>
+                        3. Head Metadata
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/4 Creatng hyperlinks/hyperlinks.html" target="blank" >
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a4.PNG" 
+                        alt="Creating Hyperlinks"/>
+                        4. Creating Hyperlinks
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!--Second Row-->
+        <div class="row" style="padding:10px;border-top:1px solid #596275;background-color:#303952;
+        background:linear-gradient(to right, #546ce5, #303952);">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/5 Document and website structure/document and website structure.html" target="blank" >
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a5.PNG" 
+                        alt="Letter" />
+                        5. Website Structure
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/6 Debugging html/debugging.html" target="blank">
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a6.PNG" 
+                        alt="Structuring a page of content" />
+                        6. Debugging Html
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name" href="project/lab exercises/7 Mozilla splash page/mozilla.html" target="blank" class="card-link">
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a7.PNG" 
+                        alt="The head meta data in html"/>
+                        7. Mozilla Splash Page
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/8 Responsive images/responsive images.html" target="blank" >
+                        <img  class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a8.PNG" 
+                        alt="Creating Hyperlinks"/>
+                        8. Responsive Images
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Third Row-->
+        <div class="row" style="padding:10px;border-top:1px solid #596275;background-color:#303952;
+        background:linear-gradient(to right, #546ce5, #303952);">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link" href="project/lab exercises/9 Fundamental css comprehension/css comprehension.html" target="blank">
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a9.PNG" 
+                        alt="Letter" />
+                        9. Css Comprehension
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name card-link"href="project/lab exercises/10 Syntax/syntax.html" target="blank" >
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a10.PNG" 
+                        alt="Structuring a page of content" />
+                        10. Syntax
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name" href="project/lab exercises/11 Box Model/boxmodel.html" target="blank" class="card-link">
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a11.PNG" 
+                        alt="The head meta data in html"/>
+                        11. Box Model
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="container container-assignment">
+                    <a class="assignment-name" href="project/lab exercises/12 Debugging css/debugging css.html" target="blank" class="card-link">
+                        <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a12.PNG" 
+                        alt="Creating Hyperlinks"/>
+                        12. Debugging Css
+                    </a>
+                </div>
+            </div>
+            <button id="more" class="btn btn-outline-light" style="margin:15px auto 15px auto;">Show More</button>
+        </div>
+        
+        <!--more assignment section containing 4th, 5th and 6th rows-->
+        <div id="moreassignment">    
+            <!--Fourth Row-->
+            <div class="row" style="padding:10px;border-top:1px solid #596275;background-color:#303952;
+            background:linear-gradient(to right, #546ce5, #303952);">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name card-link" href="project/lab exercises/13 Typesetting a homepage/homepage.html" target="blank">
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a13.PNG" 
+                            alt="Letter" />
+                            13. Typesetting a Homepage
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name card-link" href="project/lab exercises/14 Web fonts/webfonts.html" target="blank" >
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a14.PNG" 
+                            alt="Structuring a page of content" />
+                            14. Web Fonts
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name card-link" href="project/lab exercises/15 Creating fancy letterheaded paper/index.html" target="blank">
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a15.PNG" 
+                            alt="The head meta data in html"/>
+                            15. Fancy Letterheaded
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name card-link" href="project/lab exercises/16 A cool looking box/coolbox.html" target="blank" >
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a16.PNG" 
+                            alt="Creating Hyperlinks"/>
+                            16. Cool Box
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Fifth Row-->
+            <div class="row" style="padding:10px;border-top:1px solid #596275;background-color:#303952;
+            background:linear-gradient(to right, #546ce5, #303952);">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name" href="project/lab exercises/17 Silly story generator/sillystory.html" target="blank" class="card-link">
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a17.PNG" 
+                            alt="Letter" />
+                            17. Silly Story Generator
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a href="project/lab exercises/18 What went wrong/numberguess.html" class="assignment-name" target="blank" class="card-link">
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a18.PNG" 
+                            alt="Structuring a page of content" />
+                            18. Number Guess Game
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name" href="project/lab exercises/19 Image gallery/index.html" target="blank" class="card-link">
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a19.PNG" 
+                            alt="The head meta data in html"/>
+                            19. Image Gallery
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name" href="project/lab exercises/20 Adding bouncing balls features/index.html" target="blank" class="card-link">
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a20.PNG" 
+                            alt="Creating Hyperlinks"/>
+                            20. Bouncing Balls
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Sixth Row-->
+            <div class="row" style="padding:10px;border-top:1px solid #596275;background-color:#303952;
+            background:linear-gradient(to right, #546ce5, #303952);">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name" href="project/lab exercises/21 Accessibility troubleshooting/index.html" target="blank" class="card-link">
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/a21.PNG" 
+                            alt="Letter" />
+                            21. Accessibility Troubleshooting
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container container-assignment">
+                        <a class="assignment-name " href="project/index.html" target="blank" >
+                            <img class="img-responsive img-thumbnail img-assignment" src="project/images/assignment/project.PNG" 
+                                alt="Letter" />
+                            22. Final Project
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12"></div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12"></div>
+                <button id="less" class="btn btn-default btn-outline-light" style="margin:15px auto 15px auto;">Show Less</button>
+            </div>
+        </div>
+
+        <!--second fixed background-->
+        <div class="landing-bg" style="background:linear-gradient(to bottom right, #63ccda8c,#e15e4194, #63ccda8c) ,
+                    url(project/images/bg/bg1.jpg) no-repeat center center fixed;
+                    display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;
+                    z-index:-999;filter:blur(0.5px);">
+        </div>
+        
+        <br>
+        <div style="text-align:center;">
+            <h2 style="text-align:center;color:#2f3542;text-shadow:1px 1px 2px teal;">Wireframes of the Website</h2>
+            <div style="text-decoration:none;" class="list">
+                <a href="project/images/wireframe/home.png" target="blank">
+                    <button class="btn btn-outline-success" type="button">Home</button>
+
+                    </a>
+                <a href="project/images/wireframe/anime.png" target="blank">
+                    <button class="btn btn-outline-success" type="button">Anime</button>
+                </a>
+                <a href="project/images/wireframe/stream.png" target="blank">
+                    <button class="btn btn-outline-dark" type="button">Stream</button>
+                </a>
+                <a href="project/images/wireframe/gallery.png" target="blank">
+                    <button class="btn btn-outline-primary" type="button">Gallery</button>
+                </a>
+                <a href="project/images/wireframe/member.png" target="blank">
+                    <button class="btn btn-outline-danger" type="button">Member</button>
+                </a>
+            </div>
+            <hr style="border:1.1px solid #2f3542;">
+        </div>
+        <br>
+        <br><br>
+        <!--Author Section-->
+        <h4 class="text-center" style="text-shadow:2px 2px 4px teal">Regards from the author!</h4><br>
+        <div class="row" style="padding:20px;">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <figure class="figure" style="float:left;margin-right: 50px;">
+                    <img src="project/images/amit.jpg" class="figure-img img-responsive img-fluid rounded-circle"
+                    alt="Attack On Titan">
+                    <figcaption class="figure-caption text-center"><b>Amit Karn</b></figcaption>
+                </figure>
+                <p style="padding-top:70px;margin:auto auto auto auto;text-align: justify">
+                    Hi there! My name is Amit Karn and I am currently pursuing by BSc(IT) degree from
+                    The British College, Kathmandu. Website Development is not just any other favourite
+                    subject for me, rather it has become quite an obsession to me making me more and more
+                    passionate about it with every passing day. Every new thing I learn in this subject makes
+                    me fall in love with it all over again. I aspire to become one of the best web developer 
+                    the world has ever seen. Well not literally that, but something close!
+                    <br>PS - Thank You for your visit!
+                </p>
+                <span style="font-size:2.5em;">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/amit.karn.982" target="blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/imamityk98" target="blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <!--Linkedin -->
+                        <a href="https://www.linkedin.com/in/amit-karn-488174162/" target="blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!--Instagram-->
+                        <a href="https://www.instagram.com/theamittt/" target="blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+            </div>
+        </div>
+
+        
+        <!--footer-->
+        <div style="min-width: 100%;
+        min-height: 400px;
+        background-image: url(project/images/footerbg5.jpg);
+        background-size: 100% 100%;
+        position:relative;
+        margin-bottom:0px;">
+        <footer class="page-footer font-small unique-color-dark" style="border-top:2px solid #353b48;font-family:sofia">
+        <div class="container text-center text-md-left mt-5 text-center">
+        <div class="row mt-3" style="color:#ced6e0; font-weight:bold;text-align:justify;">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <a class="navbar-brand text-uppercase font-weight-bold" style="margin-bottom: 0px;float:left;" href="index.html">
+                <img src="project/images/logo1.png" alt="logo" style="max-height:100px;max-width:100px;
+                filter:drop-shadow(3px 5px rgba(0, 171, 193, 0.534)) drop-shadow(3px 5px 5px rgba(255, 255, 255, 0.562));">
+            </a>
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">About Us</h5>
+            <p>This website was created as a college project.
+                Use of this website without the creator's consent is strictly prohibited.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <!--Anime Links -->
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Anime</h5>
+            <p><a href="project/gallery.html#berserk" class="foot-links">Berserk</a></p>
+            <p><a href="project/gallery.html#boruto" class="foot-links">Boruto</a></p>
+            <p><a href="project/gallery.html#aot" class="foot-links">Attack On Titan</a></p>
+            <p><a href="project/gallery.html#dn" class="foot-links">Death Note</a></p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <!--Some More Links -->
+            <h5 class="text-uppercase font-weight-bold text-center" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Useful links</h5>
+            <p><a href="project/member.html#loginform" class="foot-links">Your Account</a></p>
+            <p><a href="project/member.html#registerform" class="foot-links">Become a Member</a></p>
+            <p><a href="#assignmentsection" class="foot-links">Assignment Link</a></p>
+            <p><a href="project/errorpage.html" target="blank" class="foot-links">Help</a></p>
+        </div>
+        
+        
+        <!--Contact Us-->
+        <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 text-center">
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35,12,243,0.616);">Contact Us</h5>
+            <table class="table" style="padding:0px;">
+                <tbody>
+                    <tr>
+                        <td style="border:0px;padding:0px;">
+                            <a href="https://www.google.com/maps/place/The+British+College,+Kathmandu
+                            /@27.6920438,85.3193302,15z/data=!4m5!3m4!1s0x0:0xabfe5f4b310f97de!8m2!3d27.
+                            6920438!4d85.3193302" target="blank">
+                            <img src="project/images/tbcmap.PNG" class="img-responsive"
+                            style="max-width:240px;max-height:120px;border-radius:8px;
+                            padding:3px;border:1px solid blanchedalmond; margin-right:0px;" alt="TBC map" />
+                            </a>
+                        </td>
+                        <td style="border:0px; color:#a4b0be; text-align: left;padding:0px;padding-left: 5px;">
+                            <p style="margin:0px;"><i class="fas fa-home mr-3"></i>Kathmandu, Nepal</p>
+                            <p style="margin:0px;"><i class="fas fa-envelope mr-3"></i>amit.karn98@gmail.com</p>
+                            <p style="margin:0px;"><i class="fas fa-phone mr-3"></i>+977-9816810976</p>
+                            <p style="margin:0px;"><i class="fas fa-print mr-3"></i>+ 01 234 567 89</p> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+        </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="border-top:2px solid #353b48;
+        margin-top:8px;color:#ffffff;font-weight:bold">
+        <img src="project/images/senjulogo.png" class="image-responsive" alt="senju logo" style="max-width:150px;
+        max-height: 70px; filter:drop-shadow(2px 2px 5px #00BCD4);">
+        <br>
+        <span style="font-family: sofia;">© 2019 Animenation, The British College</span>
+        </div>
+        </footer>
+        </div>
+
+        <!--javascript-->
+        <script src="project/js/jquery.js"></script>
+        <script src="project/js/bootstrap.js"></script>
+
+        <script>
+            //assignment name
+            $(document).ready(function(){
+                $(function(){
+                    //toggling content of more assignments id when more and less button is clicked
+                    $('#more').click(function(){
+                        $(this).hide();
+                        $('#less').show();
+                        $('#moreassignment').slideToggle(500);
+                    });
+                    $('#less').click(function(){
+                        $(this).hide();
+                        $('#more').show();
+                        $('#moreassignment').slideToggle(500);
+                    });
+                });
+
+            });
+        </script>
+    </body>
+</html>

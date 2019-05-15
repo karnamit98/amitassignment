@@ -1,0 +1,128 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+    font-family: 'font1';
+    src: url('fonts/Josefin_Slab/JosefinSlab-Bold.ttf'); /* IE9 Compat Modes, acquired from google fonts */
+    font-style: initial;
+    font-weight:bold;
+}
+@font-face {
+    font-family: 'font2';
+    src: url('fonts/Lora/Lora-Regular.ttf'); /* IE9 Compat Modes, acquired from google fonts */
+    font-style: normal;
+    font-weight:700;
+}
+body{
+    font-size: 10px;
+    line-height: 20px;
+    font-family:'font2';
+    font-style: normal;
+}
+h1, h2{
+    font-family: 'font1';
+    font-style: normal;
+    font-weight: 700;
+}
+header h1{
+    text-align: center;
+    letter-spacing: 0.17em;
+    font-size: 4em;
+}
+footer{
+    font-size: 1.3em;
+}
+section{
+    letter-spacing: 0.05em;
+    word-spacing: 0.25em;
+    font-size: 1.3em;
+}
+section p.a{
+    text-indent: 2em;
+}
+a{
+    color:#a66;
+}
+aside a{
+    color:#a66;
+    line-height: 2em;
+    font-size: 1.2em;
+    
+}
+aside ul{
+    list-style-type: disc;
+}
+aside ul li a:hover, a:hover{
+    color:#a66;
+    text-decoration: none;
+}
+aside ul li a:focus, a:focus{
+    color:#a66;
+    text-decoration: none;
+}
+a:active{
+    color:rgb(250, 152, 152);
+    text-decoration: none;
+}
+a:visited{
+    /*color:rgb(240, 40, 230);*/
+}
+a[target="_blank"]:after{
+    content:url(images/icon.png);
+    height: 2em;
+    width: 2em;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul li a{
+    border:1px solid #a66;
+    text-decoration: none;
+    display:block;
+    text-align: center;
+    font-size: 1.8em;
+    padding:1em;  
+    margin-bottom: 1em;
+}

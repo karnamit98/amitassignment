@@ -1,0 +1,55 @@
+/* General setup */
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
+@font-face{
+  font-family:'headfont';
+  /*src:url('fonts/go_speeds/GoSpeeds.ttf');  /*obtained from dafonts*/
+  /*src:url('fonts/funsized/FunSized.ttf');  /*obtained from dafonts*/
+  src:url('fonts/hemondalisa/Hemondalisa.ttf');  /*obtained from dafonts created by Kotak Kuning Studio*/
+  /*src:url('fonts/sketch_gothic_school/Sketch Gothic School.ttf');  /*obtained from dafonts created by Galdino Oten*/
+  font-style:normal;
+  font-weight:bold;
+}
+@font-face{
+  font-family:'bodyfont';
+  src:url('fonts/simplicity2/simplicity.ttf');  /*obtained from dafonts created by https://bythebutterfly.com*/
+  font-style:normal;
+  font-weight:bold;
+}
+h1,h2{
+  font-style:normal;
+  font-weight:bold;
+  font-family:'headfont';
+}
+body{
+  font-family:'bodyfont';
+  font-style:normal;
+  font-weight:bold;
+  font-size: 1.5em;
+}

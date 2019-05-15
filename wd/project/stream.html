@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Stream</title>
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style/bootstrap.css" />
+        <link rel="stylesheet" href="style/glyphicons.css" />
+        <link rel="stylesheet" href="style/swiper.min.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <style>
+          /*  body{
+                background-image:linear-gradient(to bottom, rgba(244, 67, 54, 0.335),rgba(33, 149, 243, 0.452), 
+                rgba(244, 67, 54, 0.527)), url("project/images/bg/bg6.jpg");
+                   
+            }*/
+            body{
+                overflow-x:hidden;
+               font-family:sofia;
+            }
+            @font-face{
+                src:url("fonts/sofia/Sofia-Regular.ttf");
+                font-family:sofia;
+                font-style:normal;
+            }
+            .landing-btn{
+                border:2px solid white;
+            }
+            .landing-btn:hover{
+                background-color:#00a8ff;
+                border-color:#00a8ff;
+                color:white;
+            }
+            .stream-rows{
+                margin:auto 120px auto 120px;
+            }
+            /* Extra small devices (phones, 600px and down) */
+            @media only screen and (max-width: 600px) {
+                .stream-rows{
+                    margin:auto 30px auto 30px;
+                }
+            } 
+
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+            @media only screen and (min-width: 600px) {
+                .stream-rows{
+                    margin:auto 55px auto 55px;
+                }
+            }
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                .stream-rows{
+                    margin:auto 40px auto 40px;
+                }
+            }
+
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+                .stream-rows{
+                    margin:auto 70px auto 70px;
+                }
+            }
+
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                .stream-rows{
+                    margin:auto 120px auto 120px;
+                }
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top sticky-top navbar-custom" style="padding:0px;min-width:100%;">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.png" style="max-height:2em;max-width:2em;
+                margin-right:0px;filter:drop-shadow(1px 1px rgba(0, 171, 193, 0.431)) drop-shadow(1px 1px 2px white);">
+                <span style="margin-left:0px;font-size:1em;text-shadow:1px 1px 1px blue;font-family: sofia;">AnimeNation</span>
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="stream.html">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#assignmentsection">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">Login</a>
+                    </li>
+                    <li style="padding-left:8px;">
+                        <!-- Search Box -->
+                        <div class="input-group search-box-custom">
+                            <input type="text" class="form-control" placeholder="Search this blog">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary srch-btn-custom" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--first background image with landing page-->
+        <div class="landing-bg" style="background: url(images/bg/bg3.jpg) no-repeat center fixed;
+                    display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;">
+            <div class="landing-text-custom">
+                <h1 style="color:#00a8ff;font-family: sofia;
+                text-shadow: 1px 1px 2px #f5f6fa;">WELCOME</h1>
+                <h3 style="color:white;font-family: sofia;text-shadow: 1px 1px 2px #00a8ff;">
+                    to the world of Otaku!</h3>
+                <a href="index.html">
+                    <button class="btn landing-page-btn" style=" font-family: sofia;">Get Started</button>
+                </a>
+            </div>
+        </div>
+
+        <br><br><br>
+        
+        <!--Anime Streaming Cards container-->
+        <!--first row-->
+        <div class="row stream-rows" >
+            <!--Fullmetal Alchemist: Brotherhood-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                <div id="streaming" class="stream-card-container">
+                    <div class="card-body">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="img-wrapper">
+                                <img  src="images/fma/fma.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                alt="Fullmetal Alchemist:Brotherhood"  />
+                            </div>
+                        </a>
+                        <br>
+                        <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Fullmetal Alchemist: Brotherhood</h3>
+                        <hr style="border-color:#34ace0">
+                        <div style="margin:auto 10px auto 10px">
+                            <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                            <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>9</b></span>/10<br>
+                            <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                            <b>Aired:</b> 2009-2012<br>
+                            <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                            <b>Genre:</b> Action, Adventure, Fantasy<br>
+                            <span style="font-size:1.3em;">Creator: </span>	Hiroshi Ōnogi
+                            <hr style="border-color:#34ace0">
+                        </div>  
+                        <p>Two brothers search for a Philosopher's Stone after an attempt to revive their 
+                            deceased mother goes awry and leaves them in damaged physical forms.
+                            to the world.</p>
+                        <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+
+            <!--Tokyo Ghoul-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                <div id="streaming" class="stream-card-container">
+                    <div class="card-body">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="img-wrapper">
+                                <img  src="images/tk/tkcover1.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                alt="Tokyo Ghoul"  />
+                            </div>
+                        </a>
+                        <br>
+                        <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Tokyo Ghoul</h3>
+                        <hr style="border-color:#ff6348">
+                        <div style="margin:auto 10px auto 10px">
+                            <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                            <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>8</b></span>/10<br>
+                            <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                            <b>Aired:</b> 20014-2018<br>
+                            <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                            <b>Genre:</b> Action, Adventure,Crime, Fantasy<br>
+                            <span style="font-size:1.3em;">Creator: </span>	Chūji Mikasano
+                            <hr style="border-color:#ff6348">
+                        </div>  
+                        <p>A Tokyo college student is attacked by a ghoul, a superpowered human who feeds on 
+                            human flesh. He survives, but has become part ghoul and becomes a fugitive on the run.</p>
+                        <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+                
+        <!--second row-->
+        <div class="row stream-rows" >
+            <!--Boku No Hero Academia-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                <div id="streaming" class="stream-card-container">
+                    <div class="card-body">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="img-wrapper">
+                                <img  src="images/bnha/bnhacover1.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                alt="Boku no hero academia"  />
+                            </div>
+                        </a>
+                        <br>
+                        <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Boku No Hero Academia</h3>
+                        <hr style="border-color:#34ace0">
+                        <div style="margin:auto 10px auto 10px">
+                            <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                            <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>8.4</b></span>/10<br>
+                            <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                            <b>Aired:</b> 2016-<br>
+                            <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                            <b>Genre:</b> Action, Drama, Comedy<br>
+                            <span style="font-size:1.3em;">Creator: </span>	Yōsuke Kuroda
+                            <hr style="border-color:#34ace0">
+                        </div>  
+                        <p>A superhero-loving boy without any powers is determined to enroll in a prestigious 
+                            hero academy and learn what it really means to be a hero. His dreams come true when 
+                            first meets his idol All Might.</p>
+                        <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!--Death Note-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                <div id="streaming" class="stream-card-container">
+                    <div class="card-body">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="img-wrapper">
+                                <img  src="images/dn/dn7.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                alt="Death Note"  />
+                            </div>
+                        </a>
+                        <br>
+                        <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Death Note</h3>
+                        <hr style="border-color:#ff6348">
+                        <div style="margin:auto 10px auto 10px">
+                            <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                            <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>9.2</b></span>/10<br>
+                            <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                            <b>Aired:</b> 2005-2008<br>
+                            <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                            <b>Genre:</b> Action, Drama, Fantasy<br>
+                            <span style="font-size:1.3em;">Creator: </span>Tsugumi Ohba
+                            <hr style="border-color:#ff6348">
+                        </div>  
+                        <p>An intelligent high school student goes on a secret crusade to eliminate 
+                            criminals from the world after discovering a notebook capable of killing 
+                            anyone whose name is written into it.</p>
+                        <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            
+        
+        </div>
+
+        <!--third row-->
+        <div class="row stream-rows" >
+            <!--One Piece-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                <div id="streaming" class="stream-card-container">
+                    <div class="card-body">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="img-wrapper">
+                                <img  src="images/op/opcover2.png" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                alt="One Piece"  />
+                            </div>
+                        </a>
+                        <br>
+                        <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">One Piece</h3>
+                        <hr style="border-color:#34ace0">
+                        <div style="margin:auto 10px auto 10px">
+                            <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                            <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>8.6</b></span>/10<br>
+                            <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                            <b>Aired:</b> 1998-<br>
+                            <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                            <b>Genre:</b> Action, Adventure, Comedy<br>
+                            <span style="font-size:1.3em;">Creator: </span>Echiiro Oda
+                            <hr style="border-color:#34ace0">
+                        </div>  
+                        <p>Follows the adventures of Monkey D. Luffy and his friends in order to find the 
+                            greatest treasure ever left by the legendary Pirate, Gol D Roger. The famous mystery 
+                            treasure named "One Piece".
+                        to the world.</p>
+                        <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <!--Avatar: The Last Airbender-->
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                <div id="streaming" class="stream-card-container">
+                    <div class="card-body">
+                        <a href="errorpage.html"  target="blank">
+                            <div class="img-wrapper">
+                                <img  src="images/avatar/avatarcover4.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                alt="Avatar: The Last Airbender"  />
+                            </div>
+                        </a>
+                        <br>
+                        <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Avatar: The Last Airbender</h3>
+                        <hr style="border-color:#ff6348">
+                        <div style="margin:auto 10px auto 10px">
+                            <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                            <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>9.2</b></span>/10<br>
+                            <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                            <b>Aired:</b> 2005-2008<br>
+                            <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                            <b>Genre:</b> Action, Adventure, Drama, Fantasy<br>
+                            <span style="font-size:1.3em;">Creators: </span>Makoto Fukami, Takashi Yamashita
+                            <hr style="border-color:#ff6348">
+                        </div>  
+                        <p>In a war-torn world of elemental magic, a young boy reawakens to undertake a 
+                        dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace
+                        to the world.</p>
+                        <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <button id="more1" class="btn" style="margin:30px auto 5px auto;">Show More</button>
+        </div>
+
+        <div id="morestream">
+            <!--fourth row-->
+            <div class="row stream-rows" >
+                <!--Boruto-->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                    <div id="streaming" class="stream-card-container">
+                        <div class="card-body">
+                            <a href="errorpage.html"  target="blank">
+                                <div class="img-wrapper">
+                                    <img  src="images/boruto/borutocover2.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                    alt="boruto"  />
+                                </div>
+                            </a>
+                            <br>
+                            <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Boruto</h3>
+                            <hr style="border-color:#34ace0">
+                            <div style="margin:auto 10px auto 10px">
+                                <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                                <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>7.5</b></span>/10<br>
+                                <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                                <b>Aired:</b> 2017-<br>
+                                <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                                <b>Genre:</b> Action, Adventure, Drama, Comedy<br>
+                                <span style="font-size:1.3em;">Creators: </span>Makoto Fukami, Takashi Yamashita
+                                <hr style="border-color:#34ace0">
+                            </div>  
+                            <p>Unlike Naruto, Boruto is about a son who's living his life along his friend, 
+                                avoiding being in his father's shadow. He has adventures in younger version, in school, 
+                                revealing new abilities.
+                            to the world.</p>
+                            <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                
+                <!--Berserk-->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                    <div id="streaming" class="stream-card-container">
+                        <div class="card-body">
+                            <a href="errorpage.html"  target="blank">
+                                <div class="img-wrapper">
+                                    <img  src="images/berserk/berserkcover5.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                    alt="Berserk"  />
+                                </div>
+                            </a>
+                            <br>
+                            <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Berserk</h3>
+                            <hr style="border-color:#ff6348">
+                            <div style="margin:auto 10px auto 10px">
+                                <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                                <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>9.0</b></span>/10<br>
+                                <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                                <b>Aired:</b> 1998<br>
+                                <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                                <b>Genre:</b> Action, Adventure, Drama, Fantasy<br>
+                                <span style="font-size:1.3em;">Creators: </span>Makoto Fukami, Takashi Yamashita
+                                <hr style="border-color:#ff6348">
+                            </div>  
+                            <p>Guts was once a wandering mercenary taken in by the mercenary group known as the 
+                                Band of the Hawk and he fought alongside them before their mutilated leader, 
+                                Griffith.</p>
+                            <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                        </div>
+                    </div>
+                </div>
+                <br><br>        
+            </div>
+
+            <!--fifth row-->
+            <div class="row stream-rows" >
+                <!--Naruto Shippuden-->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                    <div id="streaming" class="stream-card-container">
+                        <div class="card-body">
+                            <a href="errorpage.html"  target="blank">
+                                <div class="img-wrapper">
+                                    <img  src="images/narutos/narutoscover3.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                    alt="Naruto Shippuden"  />
+                                </div>
+                            </a>
+                            <br>
+                            <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Naruto Shippuden</h3>
+                            <hr style="border-color:#34ace0">
+                            <div style="margin:auto 10px auto 10px">
+                                <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                                <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>8.4</b></span>/10<br>
+                                <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                                <b>Aired:</b> 2007-2017<br>
+                                <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                                <b>Genre:</b> Action, Adventure, Drama, Comedy<br>
+                                <span style="font-size:1.3em;">Creator: </span>Masashi Kishimoto
+                                <hr style="border-color:#34ace0">
+                            </div>  
+                            <p>Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches 
+                                for approval and recognition, as well as to become Hokage, who is acknowledged as 
+                                the leader and strongest of all ninja in the village.
+                            to the world.</p>
+                            <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                
+                <!--Attack On Titan-->
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12" style="margin-bottom:80px;">
+                    <div id="streaming" class="stream-card-container">
+                        <div class="card-body">
+                            <a href="errorpage.html"  target="blank">
+                                <div class="img-wrapper">
+                                    <img  src="images/aot/aotcover2.jpg" class="img-fluid  w-50 mb-3 stream-card-img" 
+                                    alt="Attack On Titan"  />
+                                </div>
+                            </a>
+                            <br>
+                            <h3 style="padding:auto 10px auto 10px;margin-left:10px;color:#000105;">Attack On Titan</h3>
+                            <hr style="border-color:#ff6348">
+                            <div style="margin:auto 10px auto 10px">
+                                <span class="glyphicon glyphicon-star" style="color:#0abde3; font-size:1.2em;"></span>
+                                <b>Imdb:</b> <span style="font-size:1.2em;color:#2e86de;"><b>8.8</b></span>/10<br>
+                                <span class="glyphicon glyphicon-hourglass" style="color:#ee5253; font-size:1.2em;"></span>
+                                <b>Aired:</b> 2013-<br>
+                                <span class="glyphicon glyphicon-film" style="color:#10ac84; font-size:1.2em;"></span>
+                                <b>Genre:</b> Action, Drama, Fantasy<br>
+                                <span style="font-size:1.3em;">Creator: </span>Hajime Isayama
+                                <hr style="border-color:#ff6348">
+                            </div>  
+                            <p>After his hometown is destroyed and his mother is killed, young Eren Yeager 
+                                vows to cleanse the earth of the giant humanoid Titans that have brought 
+                                humanity to the brink of extinction.</p>
+                            <span style="float:right;margin-right: 20px;"><button class="btn responsive btn-block watch-now-btn">Start Streaming</button></span>
+                        </div>
+                    </div>
+                </div>
+                <br><br>        
+                <button id="less1" class="btn btn-default" style="margin:30px auto 5px auto;">Show Less</button>
+            </div>
+                
+        </div>
+
+        <br><br><br>
+
+        <!--second fixed background-->
+        <div class="landing-bg" style="background:linear-gradient(to bottom right, #63ccda8c,#e15e4194, #63ccda8c) ,
+         url(images/bg/bg1.jpg) no-repeat center center fixed;
+         display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;
+         z-index:-999;filter:blur(0.5px);">
+        </div>
+
+        <br><br><br>
+        <!-- Swiper -->
+        <h3 class="text-center" style="text-shadow:2px 2px 4px teal">Legends of Anime World</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/gutsp.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/shanksp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/levip1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/narutop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/zorop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/saitamap1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/luffyp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/jojop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/itachip1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/aangp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/sasukep1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/mikasap1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/natsup1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/kakaship1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/ippop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/laxusp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/grifithp.png)"></div>
+            </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+
+        <div style="background:#ced6e0">
+        <br><br><br><br><br>
+        <!--Author Section-->
+        <h4 class="text-center" style="text-shadow:2px 2px 4px teal">Regards from the author!</h4><br>
+        <div class="row" style="padding:20px;">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <figure class="figure" style="float:left;margin-right: 50px;">
+                    <img src="images/amit.jpg" class="figure-img img-responsive img-fluid rounded-circle"
+                    alt="Attack On Titan">
+                    <figcaption class="figure-caption text-center"><b>Amit Karn</b></figcaption>
+                </figure>
+                <p style="padding-top:70px;margin-left:auto;text-align: justify">
+                    Hi there! My name is Amit Karn and I am currently pursuing by BSc(IT) degree from
+                    The British College, Kathmandu. Website Development is not just any other favourite
+                    subject for me, rather it has become quite an obsession to me making me more and more
+                    passionate about it with every passing day. Every new thing I learn in this subject makes
+                    me fall in love with it all over again. I aspire to become one of the best web developer 
+                    the world has ever seen. Well not literally that, but something close!
+                    <br>PS - Thank You for your visit!
+                </p>
+                <h5>-Amit Karn</h5>
+                <span style="font-size:2.5em;">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/amit.karn.982" target="blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/imamityk98" target="blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <!--Linkedin -->
+                        <a href="https://www.linkedin.com/in/amit-karn-488174162/" target="blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!--Instagram-->
+                        <a href="https://www.instagram.com/theamittt/" target="blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                <br><br>
+                <!--Social Icons-->
+                
+            </div>
+        </div>
+        </div>
+       
+        <!--footer-->
+        <div style="min-width: 100%;
+        min-height: 400px;
+        background-image: url(images/footerbg5.jpg);
+        background-size: 100% 100%;
+        position:relative;
+        margin-bottom:0px;">
+        <footer class="page-footer font-small unique-color-dark" style="border-top:2px solid #353b48;font-family:sofia">
+        <div class="container text-center text-md-left mt-5 text-center">
+        <div class="row mt-3" style="color:#ced6e0; font-weight:bold;text-align:justify;">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <a class="text-uppercase font-weight-bold navbar-brand" style="margin-bottom: 0px;float:left;" href="index.html">
+                <img src="images/logo1.png" alt="logo" style="max-height:100px;max-width:100px;
+                filter:drop-shadow(3px 5px rgba(0, 171, 193, 0.534)) drop-shadow(3px 5px 5px rgba(255, 255, 255, 0.562));">
+            </a>
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">About Us</h5>
+            <p>This website was created as a college project.
+                Use of this website without the creator's consent is strictly prohibited.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <!--Anime Links -->
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Anime</h5>
+            <p><a href="gallery.html#berserk" class="foot-links">Berserk</a></p>
+            <p><a href="gallery.html#boruto" class="foot-links">Boruto</a></p>
+            <p><a href="gallery.html#aot" class="foot-links">Attack On Titan</a></p>
+            <p><a href="gallery.html#dn" class="foot-links">Death Note</a></p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <!--Some More Links -->
+            <h5 class="text-uppercase font-weight-bold text-center" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Useful links</h5>
+            <p><a href="member.html#loginform" class="foot-links">Your Account</a></p>
+            <p><a href="member.html#registerform" class="foot-links">Become a Member</a></p>
+            <p><a href="../home.html#assignmentsection" class="foot-links">Assignment Link</a></p>
+            <p><a href="errorpage.html" target="blank" class="foot-links">Help</a></p>
+        </div>
+        
+        
+        <!--Contact Us-->
+        <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 text-center">
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35,12,243,0.616);">Contact Us</h5>
+            <table class="table" style="padding:0px;">
+                <tbody>
+                    <tr>
+                        <td style="border:0px;padding:0px;">
+                            <a href="https://www.google.com/maps/place/The+British+College,+Kathmandu
+                            /@27.6920438,85.3193302,15z/data=!4m5!3m4!1s0x0:0xabfe5f4b310f97de!8m2!3d27.
+                            6920438!4d85.3193302" target="blank">
+                            <img src="images/tbcmap.PNG" class="img-responsive"
+                            style="max-width:240px;max-height:120px;border-radius:8px;
+                            padding:3px;border:1px solid blanchedalmond; margin-right:0px;" alt="TBC map" />
+                            </a>
+                        </td>
+                        <td style="border:0px; color:#a4b0be; text-align: left;padding:0px;padding-left: 5px;">
+                            <p style="margin:0px;"><i class="fas fa-home mr-3"></i>Kathmandu, Nepal</p>
+                            <p style="margin:0px;"><i class="fas fa-envelope mr-3"></i>amit.karn98@gmail.com</p>
+                            <p style="margin:0px;"><i class="fas fa-phone mr-3"></i>+977-9816810976</p>
+                            <p style="margin:0px;"><i class="fas fa-print mr-3"></i>+ 01 234 567 89</p> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+        </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="border-top:2px solid #353b48;
+        margin-top:8px;color:#ffffff;font-weight:bold">
+        <img src="images/senjulogo.png" alt="senju logo" class="image-responsive" style="max-width:150px;
+        max-height: 70px; filter:drop-shadow(2px 2px 5px #00BCD4);">
+        <br>
+        <span style="font-family: sofia;">© 2019 Animenation, The British College</span>
+        </div>
+        </footer>
+        </div>
+
+        <!--javascript-->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/swiper.min.js"></script>
+        
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+        
+       
+        $(document).ready(function(){
+
+            $(function(){
+                    //toggling content of more anime stream containers when more and less button is clicked
+                    $('#more1').click(function(){
+                        $(this).hide();
+                        $('#less1').show();
+                        $('#morestream').slideToggle(500);
+                    });
+                    $('#less1').click(function(){
+                        $(this).hide();
+                        $('#more1').show();
+                        $('#morestream').slideToggle(500);
+                    });
+                });
+
+            $('.stream-card-container').hover(
+                function(){
+                    $(this).animate({
+                        marginTop:"-=1%",
+                    },200);
+                },
+                function(){
+                    $(this).animate({
+                        marginTop:"0%",
+                    },200);
+                },
+            );
+        });
+
+        /*$('.stream-card-img').hover(function() {
+            $(this).stop().animate({opacity:.4},200);
+            $('.text').fadeIn();
+
+        }, function() {
+            $(this).stop().animate({opacity:1},500)
+            $('.text').fadeOut();
+        });*/
+        
+        /*var splittext = new SplitText('#quote', {type:"words, chars"});
+        TweenMax.staggerFrom(splittext.chars,0.5, {opacity:0, rotation:-180, y:-100, ease:Back.easeOut},0.02);*/
+        </script>
+    </body>
+</html>

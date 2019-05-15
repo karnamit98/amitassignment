@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Gallery</title>
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="style/bootstrap.css" />
+        <link rel="stylesheet" href="style/glyphicons.css" />
+        <link rel="stylesheet" href="style/swiper.min.css" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="stylesheet" href="style/magnific-popup.css" />
+        <style>
+          /*  body{
+                background-image:linear-gradient(to bottom, rgba(244, 67, 54, 0.335),rgba(33, 149, 243, 0.452), 
+                rgba(244, 67, 54, 0.527)), url("project/images/bg/bg6.jpg");
+                   
+            }*/
+            body{
+                overflow-x:hidden;
+               font-family:sofia;
+            }
+            @font-face{
+                src:url("fonts/sofia/Sofia-Regular.ttf");
+                font-family:sofia;
+                font-style:normal;
+            }
+            .landing-btn{
+                border:2px solid white;
+            }
+            .landing-btn:hover{
+                background-color:#00a8ff;
+                border-color:#00a8ff;
+                color:white;
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-fixed-top sticky-top navbar-custom" style="padding:0px;min-width:100%;">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo1.png" style="max-height:2em;max-width:2em;
+                margin-right:0px;filter:drop-shadow(1px 1px rgba(0, 171, 193, 0.431)) drop-shadow(1px 1px 2px white);">
+                <span style="margin-left:0px;font-size:1em;text-shadow:1px 1px 1px blue;font-family: sofia;">AnimeNation</span>
+            </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="stream.html">Stream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../home.html#assignmentsection">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="member.html">Login</a>
+                    </li>
+                    <li style="padding-left:8px;">
+                        <!-- Search Box -->
+                        <div class="input-group search-box-custom">
+                            <input type="text" class="form-control" placeholder="Search this blog">
+                            <div class="input-group-append">
+                                <button class="btn btn-secondary srch-btn-custom" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!--first background image with landing page-->
+        <div class="landing-bg" style="background: url(images/bg/bg11.jpg) no-repeat center fixed;
+                    display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;">
+            <div class="landing-text-custom">
+                <h1 style="color:#00a8ff;font-family: sofia;
+                text-shadow: 1px 1px 2px #f5f6fa;">WELCOME</h1>
+                <h3 style="color:white;font-family: sofia;text-shadow: 1px 1px 2px #00a8ff;">
+                    to the world of Otaku!</h3>
+                <a href="index.html">
+                    <button class="btn landing-page-btn" style=" font-family: sofia;">Get Started</button>
+                </a>
+            </div>
+        </div>
+
+        <br><br><br>
+        <!--the gallery header with all the direct links to the respective anime-->
+        <div  class="gallery-header text-center">
+            <h1>Anime Gallery</h1>
+            <a href="#aot"><button class="btn btn-default btn-outline-info">Attack On Titan</button></a>
+            <a href="#avatar"><button class="btn btn-default btn-outline-danger">Avatar: The Last Airbender</button></a>
+            <a href="#berserk"><button class="btn btn-default btn-outline-secondary">Berserk</button></a>
+            <a href="#boruto"><button class="btn btn-default btn-outline-info">Boruto</button></a>
+            <a href="#dn"><button class="btn btn-default btn-outline-success" id="dn">Death Note</button></a>
+            <a href="#ft"><button class="btn btn-default btn-outline-secondary moreimage">Fairy Tail</button></a>
+            <a href="#fma"><button class="btn btn-default btn-outline-primary moreimage">Fullmetal Alchemist: Brotherhood</button></a>
+            <a href="#ft"><button class="btn btn-default btn-outline-dark moreimage">Fairy Tail</button></a>
+            <a href="#narutos"><button class="btn btn-default btn-outline-success moreimage">Naruto Shippuden</button></a>
+            <a href="#op"><button class="btn btn-default btn-outline-primary moreimage">One Piece</button></a>
+            <a href="#opm"><button class="btn btn-default btn-outline-danger moreimage">One Punch Man</button></a>
+            <a href="#tg"><button class="btn btn-default btn-outline-dark moreimage">Tokyo Ghoul</button></a>
+        </div>
+        
+        <br><br><br>
+
+        <!--Attack on Titan-->
+        <div id="aot" class="gallery-section">
+            <div class="inner-width">
+                <h1>Attack On Titan</h1>
+                <div class="border"></div>
+                <div class="gallery">
+
+                    <a href="images/aot/aot7.png" class="image">
+                        <img src="images/aot/aot7.png" alt="AOT 1" />
+                    </a>
+                    <a href="images/aot/aot1.jpg" class="image">
+                        <img src="images/aot/aot1.jpg" alt="AOT 2" />
+                    </a>
+                    <a href="images/aot/aot6.jpg" class="image">
+                        <img src="images/aot/aot6.jpg" alt="AOT 3" />
+                    </a>
+                    <a href="images/aot/aot3.jpg" class="image">
+                        <img src="images/aot/aot3.jpg" alt="AOT 4" />
+                    </a>
+                    <a href="images/aot/aotcover4.png" class="image">
+                        <img src="images/aot/aotcover4.png" alt="AOT 5" />
+                    </a>
+                    <a href="images/aot/aot8.jpeg" class="image">
+                        <img src="images/aot/aot8.jpeg" alt="AOT 6" />
+                    </a>
+                    <a href="images/aot/aot2.png" class="image">
+                        <img src="images/aot/aot2.png" alt="AOT 7" />
+                    </a>
+                    <a href="images/aot/aot5.jpg" class="image">
+                        <img src="images/aot/aot5.jpg" alt="AOT 8" />
+                    </a>
+                    <a href="images/aot/aotcover2.jpg" class="image">
+                        <img src="images/aot/aotcover2.jpg" alt="AOT 9" />
+                    </a>
+                    <a href="images/aot/aot3.jpg" class="image">
+                        <img src="images/aot/aot3.jpg" alt="AOT 10" />
+                    </a>
+                    <a href="images/aot/aot10.jpg" class="image">
+                        <img src="images/aot/aot10.jpg" alt="AOT 11" />
+                    </a>
+                    <a href="images/aot/aot9.jpg" class="image">
+                        <img src="images/aot/aot9.jpg" alt="AOT 12" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <!--Avatar: The Last Airbender-->
+        <div id="avatar" class="gallery-section">
+            <div class="inner-width">
+                <h1>Avatar: The Last Airbender</h1>
+                <div class="border"></div>
+                <div class="gallery">
+                    <a href="images/avatar/avatar9.jpeg" class="image">
+                        <img src="images/avatar/avatar9.jpeg" alt="Avatar 1" />
+                    </a>
+                    <a href="images/avatar/avatar1.jpg" class="image">
+                        <img src="images/avatar/avatar1.jpg" alt="Avatar 2" />
+                    </a>
+                    <a href="images/avatar/avatarcover5.jpg" class="image">
+                        <img src="images/avatar/avatarcover5.jpg" alt="Avatar 3" />
+                    </a>
+                    <a href="images/avatar/avatar2.jpg" class="image">
+                        <img src="images/avatar/avatar2.jpg" alt="Avatar 4" />
+                    </a>
+                    <a href="images/avatar/avatar10.jpg" class="image">
+                        <img src="images/avatar/avatar10.jpg" alt="Avatar 5" />
+                    </a>
+                    <a href="images/avatar/avatar8.jpg" class="image">
+                        <img src="images/avatar/avatar8.jpg" alt="Avatar 6" />
+                    </a>
+                    <a href="images/avatar/avatarcover3.jpg" class="image">
+                        <img src="images/avatar/avatarcover3.jpg" alt="Avatar 7" />
+                    </a>
+                    <a href="images/avatar/avatar4.jpg" class="image">
+                        <img src="images/avatar/avatar4.jpg" alt="Avatar 8" />
+                    </a>
+                    <a href="images/avatar/avatar7.jpg" class="image">
+                        <img src="images/avatar/avatar7.jpg" alt="Avatar 9" />
+                    </a>
+                    <a href="images/avatar/avatar5.jpg" class="image">
+                        <img src="images/avatar/avatar5.jpg" alt="Avatar 10" />
+                    </a>
+                    <a href="images/avatar/avatar6.jpg" class="image">
+                        <img src="images/avatar/avatar6.jpg" alt="Avatar 11" />
+                    </a>
+                    <a href="images/avatar/avatar3.jpg" class="image">
+                        <img src="images/avatar/avatar3.jpg" alt="Avatar 12" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <!--Berserk-->
+        <div id="berserk" class="gallery-section">
+            <div class="inner-width">
+                <h1>Berserk</h1>
+                <div class="border"></div>
+                <div class="gallery">
+                    <a href="images/berserk/berserk9.jpg" class="image">
+                        <img src="images/berserk/berserk9.jpg" alt="Berserk 1" />
+                    </a>
+                    <a href="images/berserk/berserk2.jpg" class="image">
+                        <img src="images/berserk/berserk2.jpg" alt="Berserk 2" />
+                    </a>
+                    <a href="images/berserk/berserk3.jpg" class="image">
+                        <img src="images/berserk/berserk3.jpg" alt="Berserk 3" />
+                    </a>
+                    <a href="images/berserk/berserk4.jpg" class="image">
+                        <img src="images/berserk/berserk4.jpg" alt="Berserk 4" />
+                    </a>
+                    <a href="images/berserk/berserk5.jpg" class="image">
+                        <img src="images/berserk/berserk5.jpg" alt="Berserk 5" />
+                    </a>
+                    <a href="images/berserk/berserk6.jpg" class="image">
+                        <img src="images/berserk/berserk6.jpg" alt="Berserk 6" />
+                    </a>
+                    <a href="images/berserk/berserk7.jpg" class="image">
+                        <img src="images/berserk/berserk7.jpg" alt="Berserk 7" />
+                    </a>
+                    <a href="images/berserk/berserk8.jpg" class="image">
+                        <img src="images/berserk/berserk8.jpg" alt="Berserk 8" />
+                    </a>
+                    <a href="images/berserk/berserk1.jpg" class="image">
+                        <img src="images/berserk/berserk1.jpg" alt="Berserk 9" />
+                    </a>
+                    <a href="images/berserk/berserk10.jpg" class="image">
+                        <img src="images/berserk/berserk10.jpg" alt="Berserk 10" />
+                    </a>
+                    <a href="images/berserk/berserk11.jpg" class="image">
+                        <img src="images/berserk/berserk11.jpg" alt="Berserk 11" />
+                    </a>
+                    <a href="images/berserk/berserk12.jpg" class="image">
+                        <img src="images/berserk/berserk12.jpg" alt="Berserk 12" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <button id="more1" class="btn" style="margin:30px auto 5px auto;">Show More</button>
+        <br><br>
+
+        <div id="moregallery">
+
+            <!--Boruto-->
+            <div id="boruto" class="gallery-section">
+                <div class="inner-width">
+                    <h1>Boruto</h1>
+                    <div class="border"></div>
+                    <div class="gallery">
+                        <a href="images/boruto/boruto1.jpg" class="image">
+                            <img src="images/boruto/boruto1.jpg" alt="Boruto 1" />
+                        </a>
+                        <a href="images/boruto/boruto2.jpg" class="image">
+                            <img src="images/boruto/boruto2.jpg" alt="Boruto 2" />
+                        </a>
+                        <a href="images/boruto/boruto3.jpg" class="image">
+                            <img src="images/boruto/boruto3.jpg" alt="Boruto 3" />
+                        </a>
+                        <a href="images/boruto/boruto4.png" class="image">
+                            <img src="images/boruto/boruto4.png" alt="Boruto 4" />
+                        </a>
+                        <a href="images/boruto/boruto5.jpg" class="image">
+                            <img src="images/boruto/boruto5.jpg" alt="Boruto 5" />
+                        </a>
+                        <a href="images/boruto/boruto6.png" class="image">
+                            <img src="images/boruto/boruto6.png" alt="Boruto 6" />
+                        </a>
+                        <a href="images/boruto/boruto7.jpg" class="image">
+                            <img src="images/boruto/boruto7.jpg" alt="Boruto 7" />
+                        </a>
+                        <a href="images/boruto/boruto8.jpg" class="image">
+                            <img src="images/boruto/boruto8.jpg" alt="Boruto 8" />
+                        </a>
+                        <a href="images/boruto/boruto11.jpg" class="image">
+                            <img src="images/boruto/boruto11.jpg" alt="Boruto 9" />
+                        </a>
+                        <a href="images/boruto/boruto10.jpg" class="image">
+                            <img src="images/boruto/boruto10.jpg" alt="Boruto 10" />
+                        </a>
+                        <a href="images/boruto/boruto9.jpg" class="image">
+                            <img src="images/boruto/boruto9.jpg" alt="Boruto 11" />
+                        </a>
+                        <a href="images/boruto/boruto12.jpg" class="image">
+                            <img src="images/boruto/boruto12.jpg" alt="Boruto 12" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--Death Note-->
+            <div id="dnsection" class="gallery-section">
+                <div class="inner-width">
+                    <h1>Death Note</h1>
+                    <div class="border"></div>
+                    <div class="gallery">
+                        <a href="images/dn/dn1.jpg" class="image">
+                            <img src="images/dn/dn1.jpg" alt="Death Note 1" />
+                        </a>
+                        <a href="images/dn/dn2.jpg" class="image">
+                            <img src="images/dn/dn2.jpg" alt="Death Note 2" />
+                        </a>
+                        <a href="images/dn/dn3.jpg" class="image">
+                            <img src="images/dn/dn3.jpg" alt="Death Note 3" />
+                        </a>
+                        <a href="images/dn/dn4.jpg" class="image">
+                            <img src="images/dn/dn4.jpg" alt="Death Note 4" />
+                        </a>
+                        <a href="images/dn/dn5.jpg" class="image">
+                            <img src="images/dn/dn5.jpg" alt="Death Note 5" />
+                        </a>
+                        <a href="images/dn/dn6.jpg" class="image">
+                            <img src="images/dn/dn6.jpg" alt="Death Note 6" />
+                        </a>
+                        <a href="images/dn/dn7.jpg" class="image">
+                            <img src="images/dn/dn7.jpg" alt="Death Note 7" />
+                        </a>
+                        <a href="images/dn/dn8.jpg" class="image">
+                            <img src="images/dn/dn8.jpg" alt="Death Note 8" />
+                        </a>
+                        <a href="images/dn/dn11.jpg" class="image">
+                            <img src="images/dn/dn11.jpg" alt="Death Note 9" />
+                        </a>
+                        <a href="images/dn/dn10.jpg" class="image">
+                            <img src="images/dn/dn10.jpg" alt="Death Note 10" />
+                        </a>
+                        <a href="images/dn/dn9.jpg" class="image">
+                            <img src="images/dn/dn9.jpg" alt="Death Note 11" />
+                        </a>
+                        <a href="images/dn/dn12.jpg" class="image">
+                            <img src="images/dn/dn12.jpg" alt="Death Note 12" />
+                        </a>
+                    </div>
+                </div>
+                <button id="less1" class="btn btn-default" style="margin:30px auto auto 47%;">Show Less</button>
+            </div>
+            
+        </div>
+        
+
+        <!--second fixed background-->
+        <div class="landing-bg" style="background:linear-gradient(to bottom right, #63ccda8c,#e15e4194, #63ccda8c) ,
+         url(images/bg/bg10.jpg) no-repeat center center fixed;
+         display: table;height:100%;min-width:100%;height:700px;position:relative;background-size:cover;
+         z-index:-999;filter:blur(0.5px);">
+        </div>
+
+        <br><br><br>
+        <!-- Swiper -->
+        <h3 class="text-center" style="text-shadow:2px 2px 4px teal">Legends of Anime World</h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/gutsp.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/shanksp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/levip1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/narutop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/zorop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/saitamap1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/luffyp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/jojop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/itachip1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/aangp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/sasukep1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/mikasap1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/natsup1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/kakaship1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/ippop1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/laxusp1.png)"></div>
+                <div class="swiper-slide img-fluid img-responsive" style="background-image:url(images/png/grifithp.png)"></div>
+            </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        </div>
+
+        <!--Author-->
+        <div style="background:#ced6e0">
+        <br><br><br><br><br>
+        <!--Author Section-->
+        <h4 class="text-center" style="text-shadow:2px 2px 4px teal">Regards from the author!</h4><br>
+        <div class="row" style="padding:20px;">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <figure class="figure" style="float:left;margin-right: 50px;">
+                    <img src="images/amit.jpg" class="figure-img img-responsive img-fluid rounded-circle"
+                    alt="Attack On Titan">
+                    <figcaption class="figure-caption text-center"><b>Amit Karn</b></figcaption>
+                </figure>
+                <p style="padding-top:70px;margin-left:auto auto auto auto;text-align: justify">
+                    Hi there! My name is Amit Karn and I am currently pursuing by BSc(IT) degree from
+                    The British College, Kathmandu. Website Development is not just any other favourite
+                    subject for me, rather it has become quite an obsession to me making me more and more
+                    passionate about it with every passing day. Every new thing I learn in this subject makes
+                    me fall in love with it all over again. I aspire to become one of the best web developer 
+                    the world has ever seen. Well not literally that, but something close!
+                    <br>PS - Thank You for your visit!
+                </p>
+                <h5>-Amit Karn</h5>
+                <span style="font-size:2.5em;">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/amit.karn.982" target="blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/imamityk98" target="blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <!--Linkedin -->
+                        <a href="https://www.linkedin.com/in/amit-karn-488174162/" target="blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!--Instagram-->
+                        <a href="https://www.instagram.com/theamittt/" target="blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                <br><br>
+                <!--Social Icons-->
+                
+            </div>
+        </div>
+        </div>
+       
+        <!--footer-->
+        <div style="min-width: 100%;
+        min-height: 400px;
+        background-image: url(images/footerbg5.jpg);
+        background-size: 100% 100%;
+        position:relative;
+        margin-bottom:0px;">
+        <footer div="page-footer font-small unique-color-dark" style="border-top:2px solid #353b48;font-family:sofia">
+        <div class="container text-center text-md-left mt-5 text-center">
+        <div class="row mt-3" style="color:#ced6e0; font-weight:450;text-align:justify;">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold" style="margin-bottom: 0px;float:left;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo1.png" style="max-height:100px;max-width:100px;
+                    filter:drop-shadow(3px 5px rgba(0, 171, 193, 0.534)) drop-shadow(3px 5px 5px rgba(255, 255, 255, 0.562));">
+                </a>
+            </h6>
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">About Us</h5>
+            <p>This website was created as a college project.
+                Use of this website without the creator's consent is strictly prohibited.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <!--Anime Links -->
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Anime</h5>
+            <p><a href="gallery.html#berserk" class="foot-links">Berserk</a></p>
+            <p><a href="gallery.html#boruto" class="foot-links">Boruto</a></p>
+            <p><a href="gallery.html#aot" class="foot-links">Attack On Titan</a></p>
+            <p><a href="gallery.html#dn" class="foot-links">Death Note</a></p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <!--Some More Links -->
+            <h5 class="text-uppercase font-weight-bold text-center" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616);">Useful links</h5>
+            <p><a href="member.html#loginform" class="foot-links">Your Account</a></p>
+            <p><a href="member.html#registerform" class="foot-links">Become a Member</a></p>
+            <p><a href="../home.html#assignmentsection" class="foot-links">Assignment Link</a></p>
+            <p><a href="errorpage.html" target="blank" class="foot-links">Help</a></p>
+        </div>
+        
+        
+        <!--Contact Us-->
+        <div class="col-md-4 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 text-center">
+            <h5 class="text-uppercase font-weight-bold" style="color:#eccc68;margin-bottom: 10px;
+            text-shadow:1px 1px 2px rgba(35, 12, 243, 0.616)";>Contact Us</h5>
+            <table class="table" style="padding:0px;">
+                <tbody>
+                    <tr>
+                        <td style="border:0px;padding:0px;">
+                            <a href="https://www.google.com/maps/place/The+British+College,+Kathmandu
+                            /@27.6920438,85.3193302,15z/data=!4m5!3m4!1s0x0:0xabfe5f4b310f97de!8m2!3d27.
+                            6920438!4d85.3193302" alt="Google map for The Tritish College" target="blank">
+                            <img src="images/tbcmap.PNG" class="img-responsive"
+                            style="max-width:240px;max-height:120px;border-radius:8px;
+                            padding:3px;border:1px solid blanchedalmond; margin-right:0px;" alt="TBC map" />
+                            </a>
+                        </td>
+                        <td style="border:0px; color:#a4b0be; text-align: left;padding:0px;padding-left: 5px;">
+                            <p style="margin:0px;"><i class="fas fa-home mr-3"></i>Kathmandu, Nepal</p>
+                            <p style="margin:0px;"><i class="fas fa-envelope mr-3"></i>amit.karn98@gmail.com</p>
+                            <p style="margin:0px;"><i class="fas fa-phone mr-3"></i>+977-9816810976</p>
+                            <p style="margin:0px;"><i class="fas fa-print mr-3"></i>+ 01 234 567 89</p> 
+                        </td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+        </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="border-top:2px solid #353b48;
+        margin-top:8px;color:#ffffff;font-weight:450">
+        <img src="images/senjulogo.png" class="image-responsive" style="max-width:150px;
+        max-height: 70px; filter:drop-shadow(2px 2px 5px #00BCD4);">
+        <br>
+        <span style="font-family: sofia;">© 2019 Animenation, The British College</span>
+        </div>
+        </footer>
+        </div>
+
+        <!--javascript-->
+ 
+        <script src="js/bootstrap.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+        
+           
+        $(".gallery").magnificPopup({
+                delegate:'a', 
+                type:'image',
+                gallery:{
+                    enabled:true
+                }
+            });
+
+        $(document).ready(function(){
+
+            $(function(){
+                    //toggling content of more anime stream containers when more and less button is clicked
+                    $('#more1').click(function(){
+                        $(this).hide();
+                        $('#less1').show();
+                        $('#moregallery').slideToggle(500);
+                    });
+                    $('#less1').click(function(){
+                        $(this).hide();
+                        $('#more1').show();
+                        $('#moregallery').slideToggle(500);
+                    });
+                    $('#dn').click(function() { /*select class that triggers scroll*/
+                        $('#more1').hide();
+                        $('#less1').show();
+                        $('#moregallery').slideToggle(500);
+                        $('html, body').animate({
+                            scrollTop: $("#dnsection").offset().top /*class you want to scroll to!!*/
+                        }, 700); /*animation time length*/
+                    });
+
+            });
+             
+        });
+
+
+        /*$('.stream-card-img').hover(function() {
+            $(this).stop().animate({opacity:.4},200);
+            $('.text').fadeIn();
+
+        }, function() {
+            $(this).stop().animate({opacity:1},500)
+            $('.text').fadeOut();
+        });*/
+        
+        /*var splittext = new SplitText('#quote', {type:"words, chars"});
+        TweenMax.staggerFrom(splittext.chars,0.5, {opacity:0, rotation:-180, y:-100, ease:Back.easeOut},0.02);*/
+        </script>
+    </body>
+</html>
